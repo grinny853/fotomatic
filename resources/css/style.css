@@ -41,6 +41,7 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  z-index: 1;
 }
 
 header .content {
@@ -221,16 +222,27 @@ header .mobile {
 }
 
 .feature {
-  flex: 1;
+  display: flex;
+  /* flex: 1; */
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
 }
 
 .feature .image-container {
+  display: flex;
+  justify-content: center;
   width: 90%;
   height: 65%;
   margin: 0 auto;
+}
+
+.feature .content {
+  padding: 40px 0;
+}
+
+.feature img {
+  max-width: 100%;
 }
 
 .feature h2 {
