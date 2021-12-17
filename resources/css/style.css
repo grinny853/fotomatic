@@ -79,7 +79,10 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (min-width: 760px) {
+  header .content .desktopLogo {
+    display: none;
+  }
   header .desktop {
     display: none;
   }
@@ -353,9 +356,9 @@ header .mobile {
 }
 
 #quotes-section .content {
-  display: flex;
+
   padding: 5rem 0;
-  justify-content: center;
+
 }
 
 #quotes-section .quote {
@@ -376,12 +379,12 @@ header .mobile {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
